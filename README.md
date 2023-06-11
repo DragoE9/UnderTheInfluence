@@ -1,6 +1,6 @@
 # UnderTheInfluence
 A command-line application for raiding influence calculations in NationStates
-##NOTICE: This project is current an early work in progress
+## NOTICE: This project is current an early work in progress
 Suggestions and contributions are appreciated at this time. While you are welcome to use the software in its current state as-is, it may not have the features you need or want yet.
 
 Adding pilers in NationStates also increases the costs of passwords and transitions. However, this can be circumvented by removing your pilers right before doing the action in question, and then bringing them back. The program does the math assuming this is what you will do, as it is the most efficient option. I have plans to add other modes which will allow for the calculation of inefficient routes (keeping the pilers in), but the program cannot currently do this at this time.
