@@ -33,7 +33,12 @@ while True:
         else:
             pass_cost = 20*20
         secret_pass_cost = pass_cost * 2
-        trans_cost = 20*NoWA_nations + 80*WAnations
+        if NoWA_nations > 200:
+            trans_cost = 20*200 + 80*WAnations
+        else: 
+            trans_cost = 20*NoWA_nations + 80*WAnations
+        if trans_cost < 500:
+            trans_cost = 500
         if (api_region.get_shards("frontier"))["frontier"] == 0:
             trans_cost = trans_cost*2
         #create a projection of raider deleg influence
@@ -84,7 +89,12 @@ while True:
         else:
             pass_cost = 20*20
         secret_pass_cost = pass_cost * 2
-        trans_cost = 20*NoWA_nations + 80*WAnations
+        if NoWA_nations > 200:
+            trans_cost = 20*200 + 80*WAnations
+        else: 
+            trans_cost = 20*NoWA_nations + 80*WAnations
+        if trans_cost < 500:
+            trans_cost = 500
         if (api_region.get_shards("frontier"))["frontier"] == 0:
             trans_cost = trans_cost*2
         #Mode Selection
